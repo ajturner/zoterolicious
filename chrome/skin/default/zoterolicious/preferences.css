@@ -1,0 +1,11 @@
+/* Use the Gear icon until we find a keyboard icon */
+radio[pane=zoterolicious-prefpane]
+{
+	-moz-image-region: rect(0px, 224px, 32px, 192px);
+}
+radio[pane=zoterolicious-prefpane]:hover, 
+radio[pane=zoterolicious-prefpane]:active,
+radio[pane=zoterolicious-prefpane][selected="true"]
+{
+	-moz-image-region: rect(32px, 224px, 64px, 192px);
+}

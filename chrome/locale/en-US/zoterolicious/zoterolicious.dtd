@@ -1,0 +1,9 @@
+<!ENTITY zoterolicious.name			"Zoterolicious name">
+<!ENTITY zoterolicious.preferences.title						"Zoterolicious pref">
+<!ENTITY zoterolicious.preferences.activated			"Use del.icio.us sync">
+<!ENTITY zoterolicious.preferences.username				"Username">
+<!ENTITY zoterolicious.preferences.password				"Password">
+<!ENTITY zoterolicious.preferences.lastsync				"Last Synchronized">
+<!ENTITY zoterolicious.preferences.whitelist			"Whitelist">
+<!ENTITY zoterolicious.preferences.blacklist			"Blacklist">
+<!ENTITY zoterolicious.description			"Zoterolicious provides backup and syncronization of your Zotero citations with a del.icio.us account. When you add, modify, or remove items from your Zotero list, they are also added, modified, or removed from your del.icio.us bookmarks. Additionally, you can create new bookmarks in your del.icio.us account that will be syncronized back to your Zotero list. A del.icio.us acount is required. Go to https://secure.del.icio.us/register to create an account.">

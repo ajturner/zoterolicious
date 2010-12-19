@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://zoterolicious/locale/zoterolicious.dtd">
+
+<?xml-stylesheet href="chrome://global/skin/global.css"?>
+<?xml-stylesheet href="chrome://browser/skin/preferences/preferences.css"?>
+<?xml-stylesheet href="chrome://zoterolicious/skin/preferences.css"?>
+
+<overlay id="zoterolicious_preferences_overlay"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+	<!-- Merge with the BrowserPreferences Window -->
+	<prefwindow id="zotero-prefs"
+		windowtype="zotero:pref" 
+		xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		
+		<!-- Create a new pane (tab) for Zoterolicious Options. -->
+		<prefpane id="zoterolicious-prefpane" label="&zoterolicious.preferences.title;">
+
+			<!-- Intermediary between GUI and preferences system -->
+			<preferences>
+			 <!-- see the next section for more information -->
+			<preference id="pref-zoterolicious-activated" 
+				name="extensions.zotero.zoteroliciousActivated" type="bool"/>
+			<preference id="pref-zoterolicious-username" 
+				name="extensions.zotero.zoteroliciousUsername" type="string"/>
+			<preference id="pref-zoterolicious-password" 
+				name="extensions.zotero.zoteroliciousPassword" type="string"/>
+			<preference id="pref-zoterolicious-lastupdated" 
+				name="extensions.zotero.zoteroliciousLastSync" type="string"/>
+			<preference id="pref-zoterolicious-blacklist" 
+				name="extensions.zotero.zoteroliciousBlacklist" type="string"/>
+			<preference id="pref-zoterolicious-whitelist" 
+				name="extensions.zotero.zoteroliciousWhitelist" type="string"/>
+
+			</preferences>
+			<!-- GUI Elements... -->
+			<groupbox>
+				<caption>
+					<textnode value="&zoterolicious.description;" />
+				</caption>
+			</groupbox>
+			<grid>
+				<columns>
+					<column/>
+					<column flex="1"/>
+				</columns>
+				<rows>
+					<row>
+						<label value="&zoterolicious.preferences.activated;"/>
+						<checkbox id="zoteroliciousActivated" 
+							preference="pref-zoterolicious-activated"/>
+					</row>
+					<row>
+						<label value="&zoterolicious.preferences.username;"/>
+						<textbox id="zoteroliciousUsername" flex="1" oninput="" 
+							preference="pref-zoterolicious-username"
+							tabindex="1"/>
+					</row>
+					<row>
+						<label value="&zoterolicious.preferences.password;"/>
+						<textbox type="password" id="zoteroliciousPassword" flex="1" oninput="" 
+							preference="pref-zoterolicious-password"
+							tabindex="2"/>
+					</row>
+				</rows>
+			</grid>
+			<grid>
+				<columns>
+					<column/>
+					<column flex="1"/>
+				</columns>	
+				<rows>			
+					<row>
+						<label value="&zoterolicious.preferences.whitelist;"/>
+						<textbox id="zoteroliciousWhitelist" flex="1" oninput="" 
+							preference="pref-zoterolicious-whitelist"
+							tabindex="3"/>
+					</row>
+					<row>
+						<label value="&zoterolicious.preferences.blacklist;"/>
+						<textbox id="zoteroliciousBlacklist" flex="1" oninput="" 
+							preference="pref-zoterolicious-blacklist"
+							tabindex="4"/>
+					</row>
+				</rows>
+			</grid>
+		</prefpane>
+	</prefwindow>
+
+</overlay>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE window SYSTEM "chrome://zoterolicious/locale/zoterolicious.dtd">
+
+<overlay id="zoterolicious-overlay"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="zoterolicious-strings"
+			src="chrome://zoterolicious/locale/zoterolicious.properties"/>
+	</stringbundleset>
+	<menupopup id="zotero-tb-actions-popup">
+    	<menuseparator id="zotero-tb-actions-utilities-separator" hidden="false"/>
+		<menuitem id="zoterolicious-sync" 
+			insertafter="zotero-tb-actions-utilities-separator" 
+			label="Sync Zoterolicious" 
+			oncommand="Zoterolicious.sync();"/>
+	</menupopup>
+
+	<!-- Include the main extension logic -->
+	<script src="chrome://zotero/content/include.js"/>
+	<script src="zoterolicious.js"/>
+    
+</overlay>

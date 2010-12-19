@@ -1,0 +1,6 @@
+content	zoterolicious				chrome/content/zoterolicious/
+locale	zoterolicious	en-US		chrome/locale/en-US/zoterolicious/
+skin	zoterolicious	default		chrome/skin/default/zoterolicious/
+
+overlay	chrome://browser/content/browser.xul	chrome://zoterolicious/content/overlay.xul  
+overlay chrome://zotero/content/preferences.xul chrome://zoterolicious/content/preferences.xul
